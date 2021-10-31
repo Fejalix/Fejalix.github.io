@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+.background{  
+    background-image: url(../portfolio/image2.jpg);
+    background-position: center center;
+    background-size:cover;
+    height: 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+.titre, .sous-titre{  
+height: 50px;
+font-style: bold;
+color: #FFFFFF;
+margin: 50px;
+}
+.titre{
+    font-size: 46px;
+}
+.sous-titre{
+    font-size: 32px;
+}
+.bouton{
+    width: 175px;
+    height: 175px;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 100%;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px ;
+    text-decoration: none;
+    font-style: bold;
+    color: #FFFFFF; 
+}
+.bouton:hover{
+    transition: 0.6s;
+    background-color: #FFFFFF;
+    color: #000000;  
+}
