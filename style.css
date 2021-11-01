@@ -5,8 +5,9 @@
   height: 100%;
 }
 
+/*----------------------------------index------------------------------------------*/
 .background {
-  background-image: url(../portfolio/image2.jpg);
+  background-image: url(../portfolio/img/image.jpg);
   background-position: center center;
   background-size: cover;
   height: 100%;
@@ -59,5 +60,7 @@
   background-color: #FFFFFF;
   color: #000000;
 }
+
+/*----------------------------------about_me------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */

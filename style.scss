@@ -4,8 +4,10 @@
     font-family: 'Roboto', sans-serif;
     height: 100%;
 }
+/*----------------------------------index------------------------------------------*/
+ 
 .background{  
-    background-image: url(../portfolio/image2.jpg);
+    background-image: url(../portfolio/img/image.jpg);
     background-position: center center;
     background-size:cover;
     height: 100%;
@@ -22,10 +24,10 @@
     flex-direction: column;  
 }
 .titre, .sous-titre{  
-height: 50px;
-font-style: bold;
-color: #FFFFFF;
-margin: 50px;
+    height: 50px;
+    font-style: bold;
+    color: #FFFFFF;
+    margin: 50px;
 }
 .titre{
     font-size: 46px;
@@ -39,7 +41,7 @@ margin: 50px;
     border: 3px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 100%;
-    margin: 50px;
+    margin: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,3 +55,4 @@ margin: 50px;
     background-color: #FFFFFF;
     color: #000000;  
 }
+/*----------------------------------about_me------------------------------------------*/
