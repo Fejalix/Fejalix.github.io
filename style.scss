@@ -7,11 +7,8 @@
 /*----------------------------------index------------------------------------------*/
  
 .background{  
-    background-image: url(../Fejalix.github.portfolio/img/image_bk.jpg);
-    background-position: center center;
-    background-size:cover;
+    background: linear-gradient(180deg, #0C1F38 12.28%, #0C1F56 93.39%);
     height: 100%;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;  
