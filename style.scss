@@ -271,9 +271,10 @@ footer{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-/*NDP*/
+
 .container_aboutMe{
-    .div-titre-NDP{
+    /* regroupe le css pour les titres de la page skills et projects*/
+    .div-titre-NDP, .div-titre-ASOS, .div-titre-PROF, .div-titre-skills{
         background-color:#142233;
         height: auto;
         width: 90%;
@@ -288,11 +289,12 @@ footer{
             margin: 25px;
         }
     }
-    .div-description-NDP{
+    /* regroupe le css pour les déscriptions de la page skills et projects*/
+    .div-description-NDP, .div-description-ASOS, .div-description-PROF, .div-description-skills{
         background-color:#142233;
         height: auto;
         width: 90%;
-        .description-NDP{
+        .description{
             color: white;
             font-size: 18px;
             height: auto;
@@ -303,16 +305,21 @@ footer{
         }
     }
 }
-.grille_myProjects-NDP{
+/* regroupe le css pour les grille de la page skills et projects*/
+.grille_myProjects-NDP, .grille_myProjects-ASOS, .grille_myProjects-PROF, .grille_skills{
     background-color:#142233;
     width: 90%;
     height: auto;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 320px);
-    grid-template-rows: repeat(auto-fill, 209px) ; 
     grid-gap: 10px;
     padding-top: 55px;
+
+}
+/*NDP*/
+.grille_myProjects-NDP{
+    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-rows: repeat(auto-fill, 209px) ; 
     .loading, .home, .contact_img, .galerie{
         height: 209px;
         width: 320px;
@@ -320,143 +327,31 @@ footer{
 }
 /*ASOS*/
 .grille_myProjects-ASOS{
-    background-color:#142233;
-    width: 90%;
-    height: auto;
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(auto-fill, 188px);
     grid-template-rows: repeat(auto-fill, 406px) ; 
-    grid-gap: 10px;
-    padding-top: 55px;
     img{
         height: 406px;
         width: 188px;
     }
 }
-.container_aboutMe{
-    .div-titre-ASOS{
-        margin-top: 50px;
-        background-color:#142233;
-        height: auto;
-        width: 90%;
-        h2{
-            width: 90%;
-            height: auto;
-            background-color:#142233;
-            color: white;
-            display: flex;
-            font-size: 26px;
-            justify-content: start;
-            margin: 25px;
-        }
-    }
-    .div-description-ASOS{
-        background-color:#142233;
-        height: auto;
-        width: 90%;
-        .description-ASOS{
-            color: white;
-            font-size: 18px;
-            height: auto;
-            width: 90%;
-            display: flex;
-            justify-content: start;
-            margin: 25px;
-        }
-    }
-}
+
 /*PROF*/
 .grille_myProjects-PROF{
-    background-color:#142233;
-    width: 90%;
-    height: auto;
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(auto-fill, 236px);
     grid-template-rows: repeat(auto-fill, 514px) ; 
-    grid-gap: 10px;
-    padding-top: 55px;
     img{
         height: 514px;
         width: 236px;
     }
 }
-.container_aboutMe{
-    .div-titre-PROF{
-        margin-top: 50px;
-        background-color:#142233;
-        height: auto;
-        width: 90%;
-        h2{
-            width: 90%;
-            height: auto;
-            background-color:#142233;
-            color: white;
-            display: flex;
-            font-size: 26px;
-            justify-content: start;
-            margin: 25px;
-        }
-    }
-    .div-description-PROF{
-        background-color:#142233;
-        height: auto;
-        width: 90%;
-        .description-PROF{
-            color: white;
-            font-size: 18px;
-            height: auto;
-            width: 90%;
-            display: flex;
-            justify-content: start;
-            margin: 25px;
-        }
-    }
-}
+
+
 /*----------------------------------my_skills------------------------------------------*/
 
-.container_aboutMe{
-    .div-titre-skills{
-        background-color:#142233;
-        height: auto;
-        width: 90%;
-        h2{
-            width: 90%;
-            height: auto;
-            background-color:#142233;
-            color: white;
-            display: flex;
-            justify-content: start;
-            font-size: 26px;
-            margin: 25px;
-        }
-    }
-    .div-description-skills{
-        background-color:#142233;
-        height: auto;
-        width: 90%;
-        .description-skills{
-            color: white;
-            font-size: 18px;
-            height: auto;
-            width: 90%;
-            display: flex;
-            justify-content: start;
-            margin: 25px;
-        }
-    }
-}
+
 .grille_skills{
-    background-color:#142233;
-    width: 90%;
-    height: auto;
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(auto-fill, 150px);
     grid-template-rows: repeat(auto-fill, 150px) ; 
-    grid-gap: 10px;
-    padding-top: 55px;
     img{
         height: 150px;
         width: 150px;
