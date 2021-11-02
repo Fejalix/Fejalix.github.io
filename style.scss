@@ -206,6 +206,8 @@ hr{
     align-items: flex-end;
 }
 /* footer */
+
+
 footer{
     height: 300px;
     width: 100%;
@@ -254,7 +256,6 @@ footer{
         transform: rotate(90deg);
     }
 }
-
 
 
 
@@ -411,5 +412,53 @@ footer{
             justify-content: start;
             margin: 25px;
         }
+    }
+}
+/*----------------------------------my_skills------------------------------------------*/
+
+.container_aboutMe{
+    .div-titre-skills{
+        background-color:#142233;
+        height: auto;
+        width: 90%;
+        h2{
+            width: 90%;
+            height: auto;
+            background-color:#142233;
+            color: white;
+            display: flex;
+            justify-content: start;
+            font-size: 26px;
+            margin: 25px;
+        }
+    }
+    .div-description-skills{
+        background-color:#142233;
+        height: auto;
+        width: 90%;
+        .description-skills{
+            color: white;
+            font-size: 18px;
+            height: auto;
+            width: 90%;
+            display: flex;
+            justify-content: start;
+            margin: 25px;
+        }
+    }
+}
+.grille_skills{
+    background-color:#142233;
+    width: 90%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-template-rows: repeat(auto-fill, 150px) ; 
+    grid-gap: 10px;
+    padding-top: 55px;
+    img{
+        height: 150px;
+        width: 150px;
     }
 }
