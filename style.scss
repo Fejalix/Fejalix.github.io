@@ -12,7 +12,6 @@
     background-size:cover;
     height: 100%;
     background-repeat: no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -82,6 +81,7 @@ li{
     display: flex;
     height: 55px;
     margin: 25px;
+
 }
 .nav{
     color: #FFFFFF;
@@ -102,6 +102,7 @@ li{
     background-color: #FFFFFF;
     transform: rotate(360deg);  
 }
+
 /* Contenu */
 .container_aboutMe{
     background: linear-gradient(180deg, #0C1F38 12.28%, #0C1F56 93.39%);
