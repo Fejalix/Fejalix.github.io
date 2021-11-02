@@ -113,19 +113,18 @@ li {
 
 /* Contenu */
 .container_aboutMe {
-  background-color: #0c1f38;
-  height: 1900px;
+  background: linear-gradient(180deg, #0C1F38 12.28%, #0C1F56 93.39%);
+  height: auto;
 }
 
-.titre_aboutMe {
+.titre_aboutMe, .titre_myProjects {
   width: 100%;
   height: 250px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-
-.titre_aboutMe > h1 {
+.titre_aboutMe h1, .titre_myProjects h1 {
   height: auto;
   color: white;
   font-size: 46px;
@@ -143,7 +142,6 @@ hr {
 }
 
 .container_grille {
-  color: rebeccapurple;
   height: auto;
   margin-top: 50px;
   display: flex;
@@ -151,6 +149,7 @@ hr {
 }
 
 .grille {
+  background-color: #142233;
   margin: 50px;
   width: 90%;
   height: auto;
@@ -223,6 +222,7 @@ hr {
   align-items: flex-end;
 }
 
+/* footer */
 footer {
   height: 300px;
   width: 100%;
@@ -230,8 +230,7 @@ footer {
   display: flex;
   flex-direction: row;
 }
-
-.contact {
+footer .contact {
   width: 50%;
   color: white;
   font-size: 26px;
@@ -241,13 +240,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
-.contact > p {
+footer .contact p {
   height: auto;
   margin: 10px;
 }
-
-.reseaux {
+footer .reseaux {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -256,8 +253,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
-footer > hr {
+footer .reseaux img {
+  width: 50px;
+  height: 50px;
+  margin: 50px;
+}
+footer hr {
   height: 2px;
   color: #FFFFFF;
   background-color: #FFFFFF;
@@ -267,10 +268,158 @@ footer > hr {
   transform: rotate(90deg);
 }
 
-.reseaux > img {
-  width: 50px;
-  height: 50px;
-  margin: 50px;
+/*----------------------------------my_projects------------------------------------------*/
+.h {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*NDP*/
+.container_aboutMe .div-titre-NDP {
+  background-color: #142233;
+  height: auto;
+  width: 90%;
+}
+.container_aboutMe .div-titre-NDP h2 {
+  width: 90%;
+  height: auto;
+  background-color: #142233;
+  color: white;
+  display: flex;
+  justify-content: start;
+  font-size: 26px;
+  margin: 25px;
+}
+.container_aboutMe .div-description-NDP {
+  background-color: #142233;
+  height: auto;
+  width: 90%;
+}
+.container_aboutMe .div-description-NDP .description-NDP {
+  color: white;
+  font-size: 18px;
+  height: auto;
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  margin: 25px;
+}
+
+.grille_myProjects-NDP {
+  background-color: #142233;
+  width: 90%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-template-rows: repeat(auto-fill, 209px);
+  grid-gap: 10px;
+  padding-top: 55px;
+}
+.grille_myProjects-NDP .loading, .grille_myProjects-NDP .home, .grille_myProjects-NDP .contact_img, .grille_myProjects-NDP .galerie {
+  height: 209px;
+  width: 320px;
+}
+
+/*ASOS*/
+.grille_myProjects-ASOS {
+  background-color: #142233;
+  width: 90%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 188px);
+  grid-template-rows: repeat(auto-fill, 406px);
+  grid-gap: 10px;
+  padding-top: 55px;
+}
+.grille_myProjects-ASOS img {
+  height: 406px;
+  width: 188px;
+}
+
+.container_aboutMe .div-titre-ASOS {
+  margin-top: 50px;
+  background-color: #142233;
+  height: auto;
+  width: 90%;
+}
+.container_aboutMe .div-titre-ASOS h2 {
+  width: 90%;
+  height: auto;
+  background-color: #142233;
+  color: white;
+  display: flex;
+  font-size: 26px;
+  justify-content: start;
+  margin: 25px;
+}
+.container_aboutMe .div-description-ASOS {
+  background-color: #142233;
+  height: auto;
+  width: 90%;
+}
+.container_aboutMe .div-description-ASOS .description-ASOS {
+  color: white;
+  font-size: 18px;
+  height: auto;
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  margin: 25px;
+}
+
+/*PROF*/
+.grille_myProjects-PROF {
+  background-color: #142233;
+  width: 90%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 236px);
+  grid-template-rows: repeat(auto-fill, 514px);
+  grid-gap: 10px;
+  padding-top: 55px;
+}
+.grille_myProjects-PROF img {
+  height: 514px;
+  width: 236px;
+}
+
+.container_aboutMe .div-titre-PROF {
+  margin-top: 50px;
+  background-color: #142233;
+  height: auto;
+  width: 90%;
+}
+.container_aboutMe .div-titre-PROF h2 {
+  width: 90%;
+  height: auto;
+  background-color: #142233;
+  color: white;
+  display: flex;
+  font-size: 26px;
+  justify-content: start;
+  margin: 25px;
+}
+.container_aboutMe .div-description-PROF {
+  background-color: #142233;
+  height: auto;
+  width: 90%;
+}
+.container_aboutMe .div-description-PROF .description-PROF {
+  color: white;
+  font-size: 18px;
+  height: auto;
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  margin: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
