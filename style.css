@@ -7,8 +7,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Lato:wght@100;300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 :root {
+  --clr-neon-btn-projets: #d814ff;
   --clr-neon: #ff14bd;
-  --clr-bg: #31202b;
+  --clr-bg: #203124;
   --swiper-theme-color: #fd58cc;
 }
 
@@ -18,6 +19,11 @@
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   scroll-behavior: smooth;
+}
+@media screen and (max-width: 1322px) {
+  * {
+    font-size: 15px;
+  }
 }
 
 .accueil {
@@ -47,6 +53,7 @@
   position: relative;
 }
 
+.bouton_cv:before,
 .neon-button::before,
 .bouton-contact::before {
   pointer-events: none;
@@ -66,6 +73,7 @@
   opacity: 0.7;
 }
 
+.bouton_cv:after,
 .bouton-contact::after,
 .neon-button::after {
   content: "";
@@ -85,8 +93,11 @@
   color: white;
   text-shadow: none;
   background-color: var(--clr-neon);
+  transition: 0.5s;
 }
 
+.bouton_cv:hover:before,
+.bouton_cv:focus:before,
 .bouton-contact:focus:before,
 .bouton-contact:hover:before,
 .neon-button:hover::before,
@@ -94,6 +105,8 @@
   opacity: 1;
 }
 
+.bouton_cv:hover:after,
+.bouton_cv:focus:after,
 .bouton-contact:focus:after,
 .bouton-contact:hover:after,
 .neon-button:hover::after,
@@ -214,6 +227,7 @@
   background: linear-gradient(179.75deg, #31202B 0.22%, #68455C 139.65%);
 }
 .content header {
+  z-index: 9999;
   width: 100%;
   position: fixed;
 }
@@ -264,6 +278,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 237px;
   color: white;
 }
@@ -303,6 +318,7 @@
   color: white;
   text-shadow: none;
   background-color: var(--clr-neon);
+  transition: 0.5s;
 }
 .content .contenu .info-1 section {
   margin-top: 135px;
@@ -320,9 +336,19 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1322px) {
+  .content .contenu .info-2 {
+    margin-top: 100px;
+  }
+}
 .content .contenu .info-2 img {
   max-width: 400px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 460px) {
+  .content .contenu .info-2 img {
+    width: 250px;
+  }
 }
 .content .contenu .info-2 p {
   margin-top: 25px;
@@ -351,6 +377,12 @@
   width: 240px;
   height: 320px;
 }
+@media screen and (max-width: 460px) {
+  .content .skills .swiper {
+    width: 140px;
+    height: 220px;
+  }
+}
 .content .skills .swiper-wrapper {
   animation: float 3s ease-in-out infinite;
 }
@@ -367,11 +399,15 @@
   left: 0;
   right: 0;
   border-radius: 400px;
-  height: 100%;
-  width: 100%;
   transform: perspective(5em) rotateX(40deg) scale(1, 0.15);
   filter: blur(4em);
   opacity: 0.7;
+}
+@media screen and (max-width: 460px) {
+  .content .skills .ombre-swiper {
+    width: 140px;
+    height: 220px;
+  }
 }
 .content .skills .swiper-slide {
   display: flex;
@@ -382,12 +418,135 @@
   font-weight: bold;
   background-color: var(--clr-bg);
   color: var(--clr-neon);
-  text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.3), 0 0 0.45em currentColor;
   border: var(--clr-neon) 0.125em solid;
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
 }
 .content .skills .swiper-slide img {
   height: 200px;
+}
+@media screen and (max-width: 460px) {
+  .content .skills .swiper-slide img {
+    height: 100px;
+  }
+}
+.content .projets {
+  min-height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .projets section {
+  width: 82%;
+}
+.content .projets section h2 {
+  font-weight: 700;
+  font-size: 2.25em;
+  margin-bottom: 100px;
+  color: white;
+}
+.content .projets article {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .projets article a {
+  text-decoration: none;
+}
+.content .projets article a .cards {
+  background-color: #ffe3f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 350px;
+  position: relative;
+  min-height: 459px;
+}
+@media screen and (max-width: 1066px) {
+  .content .projets article a .cards {
+    margin-bottom: 200px;
+  }
+}
+.content .projets article a .cards:hover {
+  border: var(--clr-neon) 0.125em solid;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  transition: 0.5s;
+}
+@media screen and (min-width: 1800px) {
+  .content .projets article a .cards:hover:before {
+    pointer-events: none;
+    position: absolute;
+    content: "";
+    background-color: var(--clr-neon);
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 400px;
+    height: 100%;
+    width: 100%;
+    transform: perspective(8em) rotateX(40deg) scale(1.5, 0.35);
+    filter: blur(5em);
+    opacity: 0.7;
+  }
+}
+.content .projets article a .cards img {
+  max-width: 300px;
+  position: absolute;
+  top: -90px;
+}
+.content .projets article a .cards section {
+  color: black;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.content .projets article a .cards section h3 {
+  max-width: 300px;
+  margin-bottom: 30px;
+  font-size: 1.75em;
+}
+.content footer {
+  height: 350px;
+  background-color: #512140;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content footer p {
+  color: white;
+  font-size: 1.75em;
+  margin-bottom: 30px;
+}
+.content footer a {
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  display: flex;
+  justify-content: center;
+  padding: 15px 35px;
+  border-radius: 50px;
+  align-items: center;
+  font-weight: 700;
+  text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+}
+.content footer .bouton_cv:hover,
+.content footer .bouton_cv:focus {
+  color: white;
+  text-shadow: none;
+  background-color: var(--clr-neon);
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

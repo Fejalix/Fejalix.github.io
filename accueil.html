@@ -15,11 +15,11 @@
 
 <div class="content">
     <header>
-        <nav>
+        <nav id="navbar">
             <ul>
                 <li><a  href="#accueil">Accueil</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projet">Projets</a></li>
+                <li><a href="#projets">Projets</a></li>
             </ul>
         </nav>
         <hr>
@@ -30,10 +30,10 @@
                 <h1>HELLO WORLD !</h1>
                 <h2>My name is Félix Janot.</h2>
             </article>
-            <a class="bouton-contact"href="">Me contacter</a>
+            <a class="bouton-contact"href="#contact">Contact me</a>
             <section>
-                <a href=""><img src="img/logo_github.png" alt=""></a>
-                <a href=""><img src="img/logo-link.png" alt=""></a>
+                <a target="blank" href="https://github.com/Fejalix"><img src="img/logo_github.png" alt=""></a>
+                <a target="blank" href="https://fr.linkedin.com/in/felixjanot"><img src="img/logo-link.png" alt=""></a>
             </section>
         </div>
         <div class="info-2">
@@ -89,10 +89,47 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="projets">
-        
-    </div>
+        <div class="projets" id="projets">
+          <section >
+            <h2>My projects :</h2>
+          </section>
+          <article>
+            <a  target="blank" href="https://bap-felix-steven.000webhostapp.com/">
+              <div class="cards">
+                  <img src="img/projets/odincore2.png" alt="">
+                  <section>
+                    <h3>Bourse Aux Projets</h3>
+                    <p>Creation of a showcase site for the company Odincore, I used Wordpress to allow the client to modify the content of the site.</p>
+                  </section>
+              </div>
+            </a>
+            <a  target="blank" href="https://sass-integration-maquette.vercel.app/">
+              <div class="cards">
+                <img src="img/projets/tailwind.png" alt="">
+                <section>
+                  <h3>Integration model</h3>
+                  <p>Integration of an Adobe XD model in HTML, CSS with the Tailwind library</p>
+                </section>
+              </div>
+            </a>
+            <a  target="blank" href="https://pokedex-api-nbi902kq8-fejalix.vercel.app/">
+              <div class="cards">
+                <img src="img/projets/pokedex-api.png" alt="">
+                <section>
+                  <h3>Pokedex API</h3>
+                  <p>Integration of an Adobe XD model in HTML, CSS with the Tailwind library</p>
+                </section>
+              </div>
+          </a>
+          </article>
+        </div>
+        <footer id="contact">
+            <p>Felix.janot45@gmail.com</p>
+            <p>07 68 66 75 52</p>
+            <a target="blank" class="bouton_cv"href="img/cv.jpg">My CV</a>
+        </footer>
+</div>
+
 
    
   <!-- swiper -->
